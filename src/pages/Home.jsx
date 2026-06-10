@@ -1,5 +1,5 @@
 import { ChevronRight, Download } from "lucide-react";
-import foreBg from "../assets/foreBg.png";
+import foreBg from "../assets/forebg.png";
 import { NavLink } from "react-router-dom";
 
 function Home() {

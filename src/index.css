@@ -1,71 +1,10 @@
 @import "tailwindcss";
 
-/* ==========================================
-   PORTFOLIO DESIGN SYSTEM
-   Modern Minimal + Terminal + Premium UI
-========================================== */
-
 :root {
-
-    /* ==========================================
-   LIGHT THEME
-========================================== */
-
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F8FAFC;
-    --surface: #F1F5F9;
-    --surface-elevated: #E2E8F0;
-
-    --text-primary: #0F172A;
-    --text-secondary: #334155;
-    --text-muted: #64748B;
-    --text-disabled: #94A3B8;
-
-    --accent-primary: #00B86B;
-    --accent-secondary: #2563EB;
-    --accent-premium: #6366F1;
-
-    --success: #22C55E;
-    --warning: #F59E0B;
-    --error: #EF4444;
-    --info: #06B6D4;
-
-    --border-subtle: #E2E8F0;
-    --border-active: rgba(0, 184, 107, 0.35);
-
-    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
-    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
-    --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
-
-    /* Gradients */
-
-    --gradient-hero:
-        linear-gradient(135deg,
-            #FFFFFF 0%,
-            #F8FAFC 55%,
-            #E2E8F0 100%);
-
-    --gradient-accent:
-        linear-gradient(90deg,
-            #00B86B,
-            #2563EB);
-
-    --gradient-premium:
-        linear-gradient(135deg,
-            #6366F1,
-            #2563EB);
-
-}
-
-/* ==========================================
-   DARK THEME
-========================================== */
-
-.dark {
 
     --bg-primary: #0A0F14;
     --bg-secondary: #111827;
-    --surface: #1A2332;
+    --surface: #F1F5F9;
     --surface-elevated: #05070B;
 
     --text-primary: #F5F7FA;
@@ -109,9 +48,52 @@
 
 }
 
-/* ==========================================
-   OPTIONAL TERMINAL TOKENS
-========================================== */
+
+.light {
+
+    --bg-primary: #F6F5F4;
+    --bg-secondary: #F8FAFC;
+    --surface: #1A2332;
+    --surface-elevated: #E2E8F0;
+
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+    --text-disabled: #94A3B8;
+
+    --accent-primary: #00B86B;
+    --accent-secondary: #2563EB;
+    --accent-premium: #6366F1;
+
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --error: #EF4444;
+    --info: #06B6D4;
+
+    --border-subtle: #E2E8F0;
+    --border-active: rgba(0, 184, 107, 0.35);
+
+    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+    --gradient-hero:
+        linear-gradient(135deg,
+            #FFFFFF 0%,
+            #F8FAFC 55%,
+            #E2E8F0 100%);
+
+    --gradient-accent:
+        linear-gradient(90deg,
+            #00B86B,
+            #2563EB);
+
+    --gradient-premium:
+        linear-gradient(135deg,
+            #6366F1,
+            #2563EB);
+
+}
 
 :root {
 
@@ -125,14 +107,10 @@
 
 }
 
-/* ==========================================
-   EXAMPLE USAGE
-========================================== */
-
 body {
     background: var(--bg-primary);
     color: var(--text-primary);
-    font-family: "Inter", sans-serif;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .card {
@@ -161,4 +139,28 @@ body {
     background: var(--gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+    padding: 3px;
+    border-radius: 5px;
+    background: linear-gradient(90deg,
+            #4f46e5,
+            #06b6d4,
+            #22c55e);
+}
+
+.box {
+    background: var(--bg-primary);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

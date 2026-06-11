@@ -7,8 +7,6 @@ import { MdArrowOutward } from "react-icons/md";
 function Projects() {
   return (
     <div className="min-h-screen bg-(--bg-primary) px-8 py-24 text-(--text-primary) lg:px-20">
-      {/* Header */}
-
       <div className="mb-16 max-w-4xl">
         <p className="mb-4 text-sm uppercase tracking-[0.25em] text-(--accent-primary)">
           //1 Crafted with code
@@ -44,8 +42,6 @@ function Projects() {
         </p>
       </div>
 
-      {/* Projects Grid */}
-
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {projectsData.map((d) => {
           return (
@@ -54,19 +50,19 @@ function Projects() {
               className="
             group
             relative
+            overflow-hidden
             rounded-2xl
             border border-(--text-primary)/10
             bg-(--bg-primary)/70
             backdrop-blur-sm
             transition-all
             duration-300
+            overflow-hidden
             hover:-translate-y-1
             hover:border-(--text-primary)/8
             hover:shadow-[0_0_20px_rgba(0,255,157,0.04)]
           "
             >
-              {/* Image */}
-
               <div className="overflow-hidden border-b border-(--text-primary)/5">
                 <img
                   src={d.image}
@@ -82,24 +78,16 @@ function Projects() {
                 />
               </div>
 
-              {/* Content */}
-
               <div className="p-5">
-                {/* Title */}
-
                 <div className="mb-3 flex items-center gap-2">
                   <h2 className="text-xl font-semibold text-(--text-primary)">
                     {d.title}
                   </h2>
                 </div>
 
-                {/* Description */}
-
                 <p className="mb-5 text-sm leading-relaxed text-(--text-secondary)">
                   {d.description}
                 </p>
-
-                {/* Tech Stack */}
 
                 <div className="mb-5 flex flex-wrap gap-2">
                   {d.techStack.map((stack) => {
@@ -129,8 +117,6 @@ function Projects() {
                     ) : null;
                   })}
                 </div>
-
-                {/* Footer */}
 
                 <div
                   className="

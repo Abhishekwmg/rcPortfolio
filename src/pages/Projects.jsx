@@ -50,7 +50,6 @@ function Projects() {
               className="
             group
             relative
-            overflow-hidden
             rounded-2xl
             border border-(--text-primary)/10
             bg-(--bg-primary)/70

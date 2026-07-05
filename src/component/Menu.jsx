@@ -241,8 +241,6 @@ function MenuBar() {
         />
       </aside>
 
-      {/* MOBILE */}
-
       <button
         onClick={() => setIsExpanded(true)}
         className="

@@ -65,7 +65,6 @@ function Contact() {
   return (
     <section className="min-h-screen bg-(--bg-primary) px-8 py-24 text-(--text-primary) lg:px-20">
       <div className="mx-auto grid max-w-6xl items-start gap-16 lg:grid-cols-[420px_1fr]">
-        {/* Left */}
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.25em] text-(--accent-primary)">
             //5 Contact
@@ -102,7 +101,6 @@ function Contact() {
           </div>
         </div>
 
-        {/* Form */}
         <form
           onSubmit={handleSubmit}
           className="space-y-8 rounded-3xl border border-(--text-primary)/20 bg-(--bg-primary)/70 p-10 backdrop-blur-sm"

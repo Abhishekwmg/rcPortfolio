@@ -1,5 +1,6 @@
 import orbitScreen from "../src/assets/orbitScreen.png";
 import aeroScreen from "../src/assets/aeroScreen.png";
+import cryptox from "../src/assets/cryptox.png";
 
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
@@ -62,7 +63,39 @@ export const socialLinks = [
 
 export const projectsData = [
   {
-    id: 1,
+    id: 2,
+    title: "CryptoX Analytics & Tracker",
+    slug: "cryptox-analytics-tracker",
+    description:
+      "Real-time cryptocurrency analytics and portfolio tracking platform featuring dynamic price charts, watchlists, and market insights.",
+
+    techStack: [
+      "SiReact",
+      "SiTypescript",
+      "SiRedux",
+      "SiTanstack",
+      "SiTailwindcss",
+      "SiVite",
+    ],
+
+    highlights: [
+      "Feature-based folder architecture",
+      "State management with Redux Toolkit",
+      "Async server state & caching via TanStack Query",
+      "Interactive time-frame charts powered by Recharts",
+    ],
+
+    liveUrl: null,
+    githubUrl: "https://github.com/Abhishekwmg/crypto-x",
+
+    featured: true,
+
+    category: "Frontend",
+
+    image: cryptox,
+  },
+  {
+    id: 2,
     title: "Interactive Weather Map",
     slug: "openaero-weather-map",
     description:
@@ -88,7 +121,7 @@ export const projectsData = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Orbit Shop",
     slug: "react-commerce-demo",
     description:
@@ -129,7 +162,7 @@ export const skillsData = [
     description:
       "Libraries, frameworks and UI tooling used to build modern frontend applications.",
 
-    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+    skills: ["React.js", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS"],
   },
 
   {
@@ -140,30 +173,23 @@ export const skillsData = [
 
     description: "State management, async data handling and API communication.",
 
-    skills: [
-      "Redux Toolkit",
-      "TanStack Query",
-      "REST APIs",
-      "Zod",
-      "Firebase Auth",
-    ],
+    skills: ["Redux Toolkit", "TanStack Query", "Zustand", "Zod", "REST APIs"],
   },
 
   {
     id: 3,
     heading: "Core Web",
     icon: "Globe",
-
     accent: "#F59E0B",
 
     description: "Fundamental web technologies and frontend best practices.",
 
     skills: [
-      "JavaScript (ES6+)",
       "HTML5",
       "CSS3",
       "Responsive Design",
-      "Accessibility",
+      "Web Accessibility (WCAG)",
+      "Performance Optimization",
     ],
   },
 
@@ -171,20 +197,25 @@ export const skillsData = [
     id: 4,
     heading: "Tools & Workflow",
     icon: "Wrench",
-
     accent: "#38BDF8",
 
     description:
-      "Development tooling, debugging and day-to-day engineering workflow.",
+      "Development tooling, testing and day-to-day engineering workflow.",
 
-    skills: ["Git", "Vite", "Browser DevTools", "API Integration"],
+    skills: [
+      "Git",
+      "Vite",
+      "Jest / Vitest",
+      "Browser DevTools",
+      "Jira/Azure",
+      "Confluence",
+    ],
   },
 
   {
     id: 5,
     heading: "AI & Productivity",
     icon: "Sparkles",
-
     accent: "#A855F7",
 
     description:
@@ -197,7 +228,7 @@ export const skillsData = [
 export const experienceData = [
   {
     id: 1,
-    role: "Experience Engineer L2",
+    role: "Experience Engineer L2 (Frontend)",
     company: "Publicis Sapient",
 
     duration: "2021 — Present",
@@ -209,37 +240,30 @@ export const experienceData = [
     icon: "Code2",
 
     description:
-      "Building scalable frontend applications with React, TypeScript and modern UI architecture.",
+      "Owned and engineered scalable, customer-facing modules for large-scale enterprise web applications across modern web platforms.",
 
     achievements: [
-      "Rebuilt and owned an interactive geospatial discovery platform with Google Maps, geocoding, and radius-based search.",
-      "Created real-time location-driven experiences using geospatial queries and Google Maps APIs.",
-      "Improved performance, accessibility, and frontend scalability through optimization and reusable React components.",
+      "Owned and developed key customer-facing modules for large-scale enterprise web applications, focusing on clean architecture and responsive cross-browser design.",
+      "Built reusable UI components and shared design system patterns to accelerate feature delivery and ensure visual consistency across squads.",
+      "Managed complex client-side state for dynamic search flows, handling debounced user inputs, background API calls, caching, and UI error states.",
+      "Optimized frontend performance and Core Web Vitals via bundle auditing, lazy loading, and code-splitting, reducing initial page load times by 30-35%.",
+      "Collaborated with backend teams to integrate REST APIs, handling data transformations, async state, and edge-case error scenarios.",
+      "Translated Figma specs into accessible interfaces alongside UX designers, maintaining high stability with Jest and React Testing Library unit/integration tests.",
+      "Managed daily workflows in Jira/Azure DevOps, actively participating in Agile sprint ceremonies, peer code reviews, and Confluence technical documentation.",
     ],
 
-    tech: ["JavaScript", "API Integration", "Adobe AEM", "SCSS", "HTML"],
-  },
-
-  {
-    id: 2,
-    role: "ML Data Associate",
-    company: "Amazon",
-
-    duration: "2018 — 2019",
-
-    location: "Hyderabad, Telangana",
-
-    employmentType: "Full-time",
-
-    icon: "MonitorSmartphone",
-
-    description:
-      "Delivered responsive interfaces and optimized user experience across modern web applications.",
-
-    achievements: [
-      "Transcribed and labelled audio commands to improve Alexa’s speech recognition and NLU models.",
-      "Converted short voice interactions into accurate text and tagged user intent for AI model training.",
-      "Participated in internal coding events and gained hands-on exposure to JavaScript-based tooling and problem-solving.",
+    tech: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Redux Toolkit",
+      "TanStack Query",
+      "Zod",
+      "Tailwind CSS",
+      "REST APIs",
+      "Jest",
+      "React Testing Library",
     ],
   },
 ];
@@ -265,13 +289,13 @@ export const aboutData = {
     {
       id: 2,
       label: "Frontend Focus",
-      value: "4+ yrs",
+      value: "5 yrs",
     },
 
     {
       id: 3,
       label: "Core Stack",
-      value: "React",
+      value: "React + TypeScript",
     },
   ],
 

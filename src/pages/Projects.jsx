@@ -127,10 +127,11 @@ function Projects() {
                 pt-4
               "
                 >
-                  <NavLink
-                    to={d.liveUrl}
-                    target="_blank"
-                    className="
+                  {d.liveUrl !== null && (
+                    <NavLink
+                      to={d.liveUrl}
+                      target="_blank"
+                      className="
                   flex
                   items-center
                   gap-2
@@ -140,10 +141,11 @@ function Projects() {
                   transition-opacity
                   hover:opacity-80
                 "
-                  >
-                    Live Demo
-                    <MdArrowOutward className="text-(--accent-primary)" />
-                  </NavLink>
+                    >
+                      Live Demo
+                      <MdArrowOutward className="text-(--accent-primary)" />
+                    </NavLink>
+                  )}
 
                   <NavLink
                     to={d.githubUrl}

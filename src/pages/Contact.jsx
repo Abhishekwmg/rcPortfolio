@@ -55,8 +55,8 @@ function Contact() {
         setSuccess(false);
       }, 4000);
     } catch (err) {
-      console.error(err);
       alert("Failed to send message.");
+      throw err.message;
     } finally {
       setLoading(false);
     }
